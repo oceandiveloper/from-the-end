@@ -1,8 +1,16 @@
 # Offene Punkte
 
-## Als Nächstes
+## Als Nächstes (Stand 2026-11-09)
+- Kevin testet Midday Reset v1 und Evening Money v1 ein paar Tage, Feedback zu Sätzen, Tempo, Ambient.
+- Abend-Buttons im Bot: "How was today?" → Work / Family / Money / Calm → Track aus Modulen zusammensetzen. Dafür `scripts/` auf dem Server laufen lassen (ffmpeg dort prüfen).
+- Revision-Module Work, Family, Calm schreiben (Money existiert).
+- Morgen-Track: täglich drei Level-100-Sätze aus `docs/kevin-2.0.md`.
+- Video-Prozess neu: Analyse (WF5) ersetzen durch "Kandidaten herausziehen" (Lines / Phrases / Concepts, ohne Deutung) → Kevin wählt per Nummer in Telegram → Bibliothek in "Quotes / Statements" (braucht Felder Source, Type, Status, Timestamp, Own Version, Methods; vorher Freigabe). Zweck: Bausteine für Revision- und Szenen-Module. Fremde Sätze nie wörtlich in eigene Audios, Own Version nutzen.
+- Bot: Ideen/Notizen ohne Link speichern.
+- "Apply to me" im Bot braucht eine eigene Ausgabe (aktuell gleiche Analyse wie "Analyze").
+- Ambient: selbst erzeugt (lizenzfrei). Alternativen Envato Elements / Uppbeat erst nach Lizenzprüfung (Content ID, App-Nutzung) für öffentliche Inhalte.
 - Workflow 7 (Pull Channel Videos) auf einem kleinen Kanal testen (z.B. Neville Creation), erst dann alle.
-- Workflow 8: Transkripte für die Shortlist holen (TranscriptAPI-Credits beachten, Agent Runs loggen).
+- Transkripte für die Shortlist holen (TranscriptAPI-Credits beachten, Agent Runs loggen). Nummer 8 ist inzwischen an "Voice Track Segments" vergeben.
 - Wettbewerbsanalyse: Top 50 je Kanal, Muster bei Titeln, Hooks, Längen, Themenlücken → Insights.
 - Mehr kleine AI-Kanäle (5k bis 50k Abos) recherchieren; Stichprobe ist zu stark Richtung große Human-Kanäle.
 - Narc Pattren und Grace & Victory: Content Origin prüfen, Abos passen nicht zu den Views (vermutlich Kollaboration/Netzwerk).

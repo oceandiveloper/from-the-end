@@ -36,6 +36,11 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 5. **Analyze Source**: Claude → Key Points, Personal Relevance, Coverage Note (gegen Topics/Methods), optional Suggested Method; Post in `#fte-sources`.
 6. **Personal Track (Stuck Moment)**: iOS-Diktat → Claude-Skript (~1.000 Wörter) → ElevenLabs → Bunny → Discord `#fte-personal`. Webhook `fte-personal-tracks-new`.
 7. **Pull Channel Videos (YouTube)** (neu, noch ungetestet): Kanalstatistik + alle Uploads, Shortlist (Top 20 Views, Top 10 Trending, 10 Neueste) → Competitor Videos, Log in Agent Runs. Webhook `fte-channels-pull-videos`.
+0. **Telegram Bot** (`nmVilblsg7oeJMaC`, Bot `from_the_end_bot`, nur Kevins Chat-ID `8045566023`): YouTube-Link → "Why this, right now?" mit Buttons (Something specific / Analyze / Apply to me / Just save / Discard), Antwort auch per Sprache (ElevenLabs STT) oder Text → ruft WF1 mit `mode` + `chatId`. `/tracks` listet Personal Tracks mit Audio, `/tN` schickt das Audio. **Alles im Bot auf Englisch**, auch wenn Kevin Deutsch schreibt.
+8. **Voice Track Segments** (`47UGddXwiWjcdPVM`): Webhook `fte-tracks-voice-segments` mit `{trackId, speed, segments[{key,text,previousText,nextText}]}` → ElevenLabs "James" pro Abschnitt → Bunny `tracks/{trackId}/{key}.mp3`. Pausen und Ambient werden danach mit ffmpeg gemischt (aktuell lokal mit `scripts/`, siehe `docs/tracks/README.md`).
+9. **Upload Audio File** (`gGf3JiVAgJqCakPO`): Webhook `fte-upload-audio?path=tracks/...mp3`, Header `x-fte-token` (Token nicht im Repo), Datei multipart → Bunny.
+
+Änderungen an 1 und 5 (2026-11-08): WF1 liest `mode`/`chatId`; `mode=keep` holt nur Metadaten (kein Transkript, keine Analyse); Duplikat-Meldung geht an Telegram, wenn `chatId` gesetzt. WF5 schickt die Analyse zusätzlich an Telegram (kompakt, einklappbare Quotes, immer Englisch) und hängt neue Methoden an, statt die Verknüpfung zu überschreiben.
 
 ## n8n-/Airtable-Konventionen (aus Fehlern gelernt)
 - Sub-Workflows: Trigger "Called by Workflow" + manueller Backfill-Webhook, dann "Normalize Input".
@@ -50,6 +55,7 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 ## Inhaltsregeln für LoA-Content
 - LoA dreht sich um **Identität und inneren Zustand**, nicht um das Wie. Persönliche Tracks enthalten keine Strategien, Pläne, Beträge oder Zusicherungen, dass etwas klappt.
 - Identitätssätze nur über Kevin selbst, kein Gefühl behaupten, das er gerade nicht hat, höchstens dreimal pro Track.
+- Quelle für Kevins Identität und Ziel-Zustand: `docs/kevin-2.0.md` (sein Vision Board Level 1 → Level 100, mit Foto). Identitätssätze möglichst in seinen eigenen Worten von dort nehmen. Kevin will das Board später öffentlich zeigen, als Teil der FTE-Geschichte.
 - Jeder Content für andere muss auch für Kevin selbst funktionieren.
 
 ## Prozess und offene Punkte
