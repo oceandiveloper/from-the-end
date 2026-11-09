@@ -1,6 +1,6 @@
 # Evening Revision Modules v1: Work, Family, Calm
 
-Status: **draft for Kevin to read**. No audio generated yet. Money exists in `evening-money-v1.md`.
+Status: **v1, voiced** (2026-11-09). Pre-mixed as `tracks/evening-variants/evening-<name>-v1.mp3`, in the bot under `/evening`. Money exists in `evening-money-v1.md`.
 Each module replaces section 2 of the evening track: **Landing → Revision (one of these) → Scene → Drift**. Landing, Scene and Drift stay the same.
 Voice: ElevenLabs "James", slow and low. `[pause Xs]` = silence added during stitching.
 

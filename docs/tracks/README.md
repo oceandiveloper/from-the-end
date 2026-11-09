@@ -9,6 +9,8 @@ Scripts for Kevin's own tracks (and later the public formats). Kevin tests every
 | Evening "Fall asleep in the end" | ~20–25 min | before sleep | Landing → Revision (changes with the day: Work / Family / Money / Calm) → Scene (one wish, stays for weeks) → Drift (no outro, ambient fades) |
 | Morning "Wake up in the end" | 10–15 min | after waking, before the phone | Before → Arrive → three Level-100 lines from `docs/kevin-2.0.md` (each once, long silence after) → Carry it (one word) → Rise. v1 uses statements 1, 6, 9; daily rotation planned |
 | Midday Reset | ~7 min | when everything is too much | Stop → Breath → Weather → Anchor → Return (ends awake) |
+| Padel Before | ~5 min | before a match, nerves | Arrive → Breath → The nerves (energy, not enemy) → From the end (walking off court) → Three lines → Go |
+| Padel After | ~7 min | after a rough game, inner critic loud | Stop → The voice (weather) → One point (revision, from inside) → Three lines → Keep one good thing → Return |
 
 Evening tracks are built from modules: Landing and Drift are reused, the Revision is chosen per night, the Scene stays the same for weeks. Every module is voiced once; assembling a track costs no credits.
 
@@ -27,12 +29,15 @@ Evening tracks are built from modules: Landing and Drift are reused, the Revisio
 
 Evening variants are pre-mixed (one MP3 per Revision: Work / Family / Money / Calm), so the bot only picks a file. No mixer on the server needed. Revision drafts for Work, Family, Calm: `evening-revisions-v1.md`.
 
-In the bot: `/morning`, `/reset`, `/evening` play the current daily tracks (URLs in the `DAILY` map in the "Route Update" node of WF0, update there when a new version is published). `/tracks` lists everything.
+In the bot (WF0, node "Route Update"): `/morning` and `/reset` play directly (map `DAILY`). `/evening` ("How was today?" → Work / Family / Money / Calm) and `/padel` (Before / After) show buttons (map `MENUS`; the buttons themselves live in the Telegram nodes "Ask Evening" and "Ask Padel", labels and callback_data `m:<menu>:<key>` must match). `/tracks` lists everything, `/help` shows the commands. Update URLs there when a new version is published.
 
 ## Tracks
 
 | Track | Script | Audio |
 |---|---|---|
 | Evening Money v1.1 | `evening-money-v1.md` | `tracks/evening-money-v1/evening-money-v1-1.mp3` (Revision in "you", segments `revision-money-you-NN`) |
+| Evening Work / Family / Calm v1 | `evening-revisions-v1.md` + `evening-money-v1.md` | `tracks/evening-variants/evening-<work\|family\|calm>-v1.mp3` (revision segments in `tracks/evening-money-v1/revision-<name>-NN.mp3`) |
+| Padel Before v1 | `padel-before-v1.md` | `tracks/padel-before-v1/padel-before-v1.mp3` |
+| Padel After v1 | `padel-after-v1.md` | `tracks/padel-after-v1/padel-after-v1.mp3` |
 | Midday Reset v1 | `midday-reset-v1.md` | `tracks/midday-reset-v1/midday-reset-v1.mp3` |
 | Wake Up in the End v1 | `morning-wake-v1.md` | `tracks/morning-wake-v1/morning-wake-v1.mp3` |
