@@ -18,6 +18,8 @@ Evening tracks are built from modules: Landing and Drift are reused, the Revisio
 
 - `## N. Name` starts a module. `[pause Xs]` on its own line = silence. Blank line = new voice segment.
 - English only. Always "you" (never "he"/"she"): gender-neutral, so every track can be tested with anyone. Revisions: the old moment is seen from outside, the new version is lived from inside ("step into it").
+- **Flow over silence (Kevin, 2026-11-09):** the mind is spinning when a track starts, silence doesn't catch it, a voice does. Talk continuously, like the YouTube voices Kevin likes: imagery, repetition, guiding the attention. Pauses only where the listener actually does something: a breath (5–6 s), seeing a scene (8–15 s), repeating a line (8 s). No pause after a plain statement. Awake tracks ≤ 15 % silence, evening ≤ 30 % until the Drift.
+- One paragraph = one voice segment, several sentences long, so ElevenLabs keeps the natural rhythm. The mixer trims each segment's silence and joins segments without a pause marker with a short breath gap (0.6 s).
 - Identity lines from `docs/kevin-2.0.md`, at most three occurrences per track, no amounts, no promises, no claimed feelings.
 
 ## Production (current, v1)
@@ -38,6 +40,6 @@ In the bot (WF0, node "Route Update"): `/morning` and `/reset` play directly (ma
 | Evening Money v1.1 | `evening-money-v1.md` | `tracks/evening-money-v1/evening-money-v1-1.mp3` (Revision in "you", segments `revision-money-you-NN`) |
 | Evening Work / Family / Calm v1 | `evening-revisions-v1.md` + `evening-money-v1.md` | `tracks/evening-variants/evening-<work\|family\|calm>-v1.mp3` (revision segments in `tracks/evening-money-v1/revision-<name>-NN.mp3`) |
 | Padel Before v1 | `padel-before-v1.md` | `tracks/padel-before-v1/padel-before-v1.mp3` |
-| Padel After v1 | `padel-after-v1.md` | `tracks/padel-after-v1/padel-after-v1.mp3` |
+| Padel After v2 (pilot new flow) | `padel-after-v2.md` | `tracks/padel-after-v2/padel-after-v2.mp3` (v1 replaced) |
 | Midday Reset v1 | `midday-reset-v1.md` | `tracks/midday-reset-v1/midday-reset-v1.mp3` |
 | Wake Up in the End v1 | `morning-wake-v1.md` | `tracks/morning-wake-v1/morning-wake-v1.mp3` |

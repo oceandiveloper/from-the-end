@@ -10,7 +10,11 @@ for i, p in enumerate(plan):
         seg = f"{b}/seg/{p['key']}.mp3"
         urllib.request.urlretrieve(f"https://from-the-end-audio.b-cdn.net/tracks/{track}/{p['key']}.mp3", seg)
         vol = 0.7 if p['module'] == 'drift' else 1.0
-        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',seg,'-af',f'volume={vol}','-ar','44100','-ac','2','-c:a','pcm_s16le',out], check=True)
+        # Trim ElevenLabs' leading/trailing silence; if the next item is voice too, leave a short breath gap.
+        nxt = plan[i+1] if i + 1 < len(plan) else None
+        gap = 0.6 if nxt and nxt['type'] == 'voice' else 0.2
+        trim = 'silenceremove=start_periods=1:start_threshold=-50dB,areverse,silenceremove=start_periods=1:start_threshold=-50dB,areverse'
+        subprocess.run(['ffmpeg','-y','-loglevel','error','-i',seg,'-af',f'{trim},volume={vol},apad=pad_dur={gap}','-ar','44100','-ac','2','-c:a','pcm_s16le',out], check=True)
     else:
         subprocess.run(['ffmpeg','-y','-loglevel','error','-f','lavfi','-i','anullsrc=r=44100:cl=stereo','-t',str(p['seconds']),'-c:a','pcm_s16le',out], check=True)
     total += dur(out); lst.write(f"file 'parts/{i:03d}.wav'\n")

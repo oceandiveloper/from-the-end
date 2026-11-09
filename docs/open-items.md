@@ -2,6 +2,7 @@
 
 ## Als Nächstes (Stand 2026-11-09)
 - Kevin testet die Tracks (Morning, Midday, Evening ×4, Padel ×2) ein paar Tage, Feedback zu Sätzen, Tempo, Ambient.
+- Neuer Fluss (mehr Inhalt, Pausen nur bei Atem/Szene/Sätzen): Kevin hört Padel After v2. Passt es, alle anderen Tracks genauso neu schreiben und vertonen (Morning, Midday, Padel Before, Abend-Module). Credits: grob 25.000 Zeichen.
 - Kevin legt das Befehlsmenü in BotFather an (`/setcommands`: morning, reset, evening, padel, tracks, help).
 - `/tracks` wird lang (8 Tracks). Wenn es nervt: nur Tracks ohne festen Befehl listen oder nach Gruppe sortieren.
 - Morgen-Track: v1 steht (Sätze 1, 6, 9). Nächster Schritt: täglich rotierende drei Sätze.
