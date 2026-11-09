@@ -7,7 +7,7 @@ Scripts for Kevin's own tracks (and later the public formats). Kevin tests every
 | Format | Length | When | Structure |
 |---|---|---|---|
 | Evening "Fall asleep in the end" | ~20–25 min | before sleep | Landing → Revision (changes with the day: Work / Family / Money / Calm) → Scene (one wish, stays for weeks) → Drift (no outro, ambient fades) |
-| Morning "Wake up in the end" | 10–15 min | after waking, before the phone | three Level-100 lines from `docs/kevin-2.0.md`, rotating daily (planned) |
+| Morning "Wake up in the end" | 10–15 min | after waking, before the phone | Before → Arrive → three Level-100 lines from `docs/kevin-2.0.md` (each once, long silence after) → Carry it (one word) → Rise. v1 uses statements 1, 6, 9; daily rotation planned |
 | Midday Reset | ~7 min | when everything is too much | Stop → Breath → Weather → Anchor → Return (ends awake) |
 
 Evening tracks are built from modules: Landing and Drift are reused, the Revision is chosen per night, the Scene stays the same for weeks. Every module is voiced once; assembling a track costs no credits.
@@ -32,3 +32,4 @@ Open: run the parser/mixer on the server, so the bot can assemble the evening tr
 |---|---|---|
 | Evening Money v1 | `evening-money-v1.md` | `tracks/evening-money-v1/evening-money-v1.mp3` |
 | Midday Reset v1 | `midday-reset-v1.md` | `tracks/midday-reset-v1/midday-reset-v1.mp3` |
+| Wake Up in the End v1 | `morning-wake-v1.md` | `tracks/morning-wake-v1/morning-wake-v1.mp3` |
