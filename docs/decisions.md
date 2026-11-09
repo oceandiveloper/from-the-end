@@ -15,4 +15,5 @@
 | Bot und Tracks immer auf Englisch (2026-11-08) | Kanal und Content werden englisch. Gilt auch, wenn Kevin Deutsch schreibt oder spricht. |
 | Vom Endprodukt her bauen: Abend-, Morgen-, Midday-Tracks (2026-11-09) | Neville: Momente vor dem Einschlafen und nach dem Aufwachen. Videos dienen nur noch als Rohmaterial (Sätze, Bilder) für diese Formate, nicht als Selbstzweck. Generische Analysen haben Kevin nicht inspiriert. |
 | Abend-Tracks aus Modulen (2026-11-09) | Revision wechselt mit dem Tag, die Szene bleibt (ein Wunsch, über Wochen). Module einmal vertonen, Zusammensetzen kostet keine Credits. |
+| Abend-Varianten vormischen statt Mixer auf dem Server (2026-11-09) | Vier Revisionen = vier MP3s, Speicher kostet fast nichts. Spart Server-Umbau (ffmpeg, Skripte in n8n) und macht den Bot einfach: er wählt nur eine Datei. Neu prüfen, wenn Kombinationen explodieren (z.B. mehrere Szenen × Revisionen). |
 | Kevins Vision Board ist die Quelle für Identitätssätze (2026-11-09) | Eigene Worte wirken stärker als erfundene. Bleibt sichtbar, soll später Teil der öffentlichen FTE-Geschichte werden. Beträge vom Board kommen nie in Tracks. |

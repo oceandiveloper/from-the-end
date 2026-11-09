@@ -2,8 +2,9 @@
 
 ## Als Nächstes (Stand 2026-11-09)
 - Kevin testet Wake Up in the End v1, Midday Reset v1 und Evening Money v1 ein paar Tage, Feedback zu Sätzen, Tempo, Ambient.
-- Abend-Buttons im Bot: "How was today?" → Work / Family / Money / Calm → Track aus Modulen zusammensetzen. Dafür `scripts/` auf dem Server laufen lassen (ffmpeg dort prüfen).
-- Revision-Module Work, Family, Calm schreiben (Money existiert).
+- Kevin legt das Befehlsmenü in BotFather an (`/setcommands`: morning, reset, evening, tracks).
+- Revision-Module Work, Family, Calm: Entwurf in `docs/tracks/evening-revisions-v1.md`, Kevin liest → vertonen → vier Abend-Varianten vormischen.
+- Danach `/evening` im Bot: "How was today?" → Work / Family / Money / Calm → passende vorgemischte MP3 (kein Mixer auf dem Server).
 - Morgen-Track: v1 steht (Sätze 1, 6, 9). Nächster Schritt: täglich rotierende drei Sätze.
 - Video-Prozess neu: Analyse (WF5) ersetzen durch "Kandidaten herausziehen" (Lines / Phrases / Concepts, ohne Deutung) → Kevin wählt per Nummer in Telegram → Bibliothek in "Quotes / Statements" (braucht Felder Source, Type, Status, Timestamp, Own Version, Methods; vorher Freigabe). Zweck: Bausteine für Revision- und Szenen-Module. Fremde Sätze nie wörtlich in eigene Audios, Own Version nutzen.
 - Bot: Ideen/Notizen ohne Link speichern.
