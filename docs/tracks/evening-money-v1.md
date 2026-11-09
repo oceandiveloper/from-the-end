@@ -63,19 +63,19 @@ Don't relive it. Just see it, the way you'd see a scene from a film. There it is
 
 [pause 8s]
 
-Now let it play again. Same place, same moment. But this time, the one in the scene is the man you already are at level one hundred.
+Now let it play again. Same place, same moment. But this time, step into it as the one you already are at level one hundred.
 
 [pause 6s]
 
-Watch him. The message arrives, and he reads it slowly. His breath stays low. His shoulders stay down. Nothing in him rushes.
+The message arrives, and you read it slowly. Your breath stays low. Your shoulders stay down. Nothing in you rushes.
 
 [pause 10s]
 
-He doesn't need to defend himself. He doesn't need anyone to understand him. He simply knows what is his to do, and he does it in his own time.
+You don't need to defend yourself. You don't need anyone to understand you. You simply know what is yours to do, and you do it in your own time.
 
 [pause 10s]
 
-He responds. He doesn't react.
+You respond. You don't react.
 
 [pause 12s]
 

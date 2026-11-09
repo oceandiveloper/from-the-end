@@ -15,7 +15,8 @@ Evening tracks are built from modules: Landing and Drift are reused, the Revisio
 ## Script conventions
 
 - `## N. Name` starts a module. `[pause Xs]` on its own line = silence. Blank line = new voice segment.
-- English only. Identity lines from `docs/kevin-2.0.md`, at most three occurrences per track, no amounts, no promises, no claimed feelings.
+- English only. Always "you" (never "he"/"she"): gender-neutral, so every track can be tested with anyone. Revisions: the old moment is seen from outside, the new version is lived from inside ("step into it").
+- Identity lines from `docs/kevin-2.0.md`, at most three occurrences per track, no amounts, no promises, no claimed feelings.
 
 ## Production (current, v1)
 
@@ -32,6 +33,6 @@ In the bot: `/morning`, `/reset`, `/evening` play the current daily tracks (URLs
 
 | Track | Script | Audio |
 |---|---|---|
-| Evening Money v1 | `evening-money-v1.md` | `tracks/evening-money-v1/evening-money-v1.mp3` |
+| Evening Money v1.1 | `evening-money-v1.md` | `tracks/evening-money-v1/evening-money-v1-1.mp3` (Revision in "you", segments `revision-money-you-NN`) |
 | Midday Reset v1 | `midday-reset-v1.md` | `tracks/midday-reset-v1/midday-reset-v1.mp3` |
 | Wake Up in the End v1 | `morning-wake-v1.md` | `tracks/morning-wake-v1/morning-wake-v1.mp3` |

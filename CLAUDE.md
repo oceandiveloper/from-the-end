@@ -54,6 +54,7 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 
 ## Inhaltsregeln für LoA-Content
 - LoA dreht sich um **Identität und inneren Zustand**, nicht um das Wie. Persönliche Tracks enthalten keine Strategien, Pläne, Beträge oder Zusicherungen, dass etwas klappt.
+- Tracks sprechen immer mit "you", nie "he"/"she" (geschlechtsneutral, Kevin will sie auch an Frauen testen). Revision: alten Moment von außen sehen, neue Version von innen erleben.
 - Identitätssätze nur über Kevin selbst, kein Gefühl behaupten, das er gerade nicht hat, höchstens dreimal pro Track.
 - Quelle für Kevins Identität und Ziel-Zustand: `docs/kevin-2.0.md` (sein Vision Board Level 1 → Level 100, mit Foto). Identitätssätze möglichst in seinen eigenen Worten von dort nehmen. Kevin will das Board später öffentlich zeigen, als Teil der FTE-Geschichte.
 - Jeder Content für andere muss auch für Kevin selbst funktionieren.

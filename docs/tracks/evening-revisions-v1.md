@@ -5,10 +5,11 @@ Each module replaces section 2 of the evening track: **Landing → Revision (one
 Voice: ElevenLabs "James", slow and low. `[pause Xs]` = silence added during stitching.
 
 Rule check (same as Money):
-- No "I am" lines here. The three identity lines of the evening track all live in the Scene. The Revisions only describe the man at level one hundred in the third person ("he"), taken from the Standards in `docs/kevin-2.0.md`.
+- Always "you", never "he" or "she": the old moment is seen from outside (like a film), the new version is lived from inside (Neville: think *from* the end, not *of* it). Gender-neutral, so the tracks work for anyone.
+- No "I am" lines here. The three identity lines of the evening track all live in the Scene. The Revisions describe what you do at level one hundred, taken from the Standards in `docs/kevin-2.0.md`.
 - No plans, no amounts, no promise that anything will work.
-- No claimed feelings: the voice invites ("let", "notice", "watch him"), never "you feel".
-- Family is about Kevin, not about anyone else being wrong. Nobody in the scene gets blamed or changed, only how he meets it.
+- No claimed feelings: the voice invites ("let", "notice", "step into it"), never "you feel".
+- Family is about Kevin, not about anyone else being wrong. Nobody in the scene gets blamed or changed, only how you meet it.
 
 ---
 
@@ -22,27 +23,27 @@ Don't go back into it. Just see it, like a scene from a film. There it is.
 
 [pause 8s]
 
-Now let it play again. Same desk, same moment. But this time, the one in the scene is the man you already are at level one hundred.
+Now let it play again. Same desk, same moment. But this time, step into it as the one you already are at level one hundred.
 
 [pause 6s]
 
-Watch him. The pressure arrives, and he doesn't speed up. He takes one breath before he answers. His shoulders stay down.
+The pressure arrives, and you don't speed up. You take one breath before you answer. Your shoulders stay down.
 
 [pause 10s]
 
-He doesn't need to prove anything. Not to the client, not to himself. He looks at the problem, not at what it might say about him.
+You don't need to prove anything. Not to the client, not to yourself. You look at the problem, not at what it might say about you.
 
 [pause 10s]
 
-He works on the problem. He doesn't carry it around.
+You work on the problem. You don't carry it around.
 
 [pause 12s]
 
-He does the next right thing, and then the next. When it's enough for the day, he lets it be enough.
+You do the next right thing, and then the next. When it's enough for the day, you let it be enough.
 
 [pause 10s]
 
-Let the scene play one more time, from the beginning, this way. Clear. Steady. In his own time.
+Let the scene play one more time, from the beginning, this way. Clear. Steady. In your own time.
 
 [pause 25s]
 
@@ -66,23 +67,23 @@ Don't judge it. Just see it, like a scene from a film. There it is.
 
 [pause 8s]
 
-Now let it play again. Same room, same moment. But this time, the one in the scene is the man you already are at level one hundred.
+Now let it play again. Same room, same moment. But this time, step into it as the one you already are at level one hundred.
 
 [pause 6s]
 
-Watch him. He comes through the door, and he leaves the day outside. Whatever is open stays at the desk.
+You come through the door, and you leave the day outside. Whatever is open stays at the desk.
 
 [pause 10s]
 
-Someone needs him, and he's there. He kneels down. He listens. His voice stays soft, even when it's loud around him.
+Someone needs you, and you're there. You kneel down. You listen. Your voice stays soft, even when it's loud around you.
 
 [pause 10s]
 
-He keeps the chaos away from his family. Not by holding everything in, but because the chaos simply doesn't live in him.
+You keep the chaos away from your family. Not by holding everything in, but because the chaos simply doesn't live in you.
 
 [pause 12s]
 
-Nobody has to be different for him to be calm. He is the quiet in the room.
+Nobody has to be different for you to be calm. You are the quiet in the room.
 
 [pause 10s]
 

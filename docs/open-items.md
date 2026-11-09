@@ -2,7 +2,7 @@
 
 ## Als Nächstes (Stand 2026-11-09)
 - Kevin testet Wake Up in the End v1, Midday Reset v1 und Evening Money v1 ein paar Tage, Feedback zu Sätzen, Tempo, Ambient.
-- Kevin legt das Befehlsmenü in BotFather an (`/setcommands`: morning, reset, evening, tracks).
+- Kevin legt das Befehlsmenü in BotFather an (`/setcommands`: morning, reset, evening, tracks, help).
 - Revision-Module Work, Family, Calm: Entwurf in `docs/tracks/evening-revisions-v1.md`, Kevin liest → vertonen → vier Abend-Varianten vormischen.
 - Danach `/evening` im Bot: "How was today?" → Work / Family / Money / Calm → passende vorgemischte MP3 (kein Mixer auf dem Server).
 - Morgen-Track: v1 steht (Sätze 1, 6, 9). Nächster Schritt: täglich rotierende drei Sätze.
