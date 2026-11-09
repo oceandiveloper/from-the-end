@@ -9,7 +9,8 @@
 - Video-Prozess neu: Analyse (WF5) ersetzen durch "Kandidaten herausziehen" (Lines / Phrases / Concepts, ohne Deutung) → Kevin wählt per Nummer in Telegram → Bibliothek in "Quotes / Statements" (braucht Felder Source, Type, Status, Timestamp, Own Version, Methods; vorher Freigabe). Zweck: Bausteine für Revision- und Szenen-Module. Fremde Sätze nie wörtlich in eigene Audios, Own Version nutzen.
 - Bot: Ideen/Notizen ohne Link speichern.
 - "Apply to me" im Bot braucht eine eigene Ausgabe (aktuell gleiche Analyse wie "Analyze").
-- Ambient: selbst erzeugt (lizenzfrei). Alternativen Envato Elements / Uppbeat erst nach Lizenzprüfung (Content ID, App-Nutzung) für öffentliche Inhalte.
+- Hintergrund: der selbst erzeugte ffmpeg-Ambient taugt nicht (Kevin, 2026-11-09). Bot spielt vorerst nur Stimme. Bessere Hintergründe finden (2–4 Optionen, z.B. Regen, Meer, warmes Pad/Klavier), Lizenz für App + YouTube prüfen. In der App: Stimme + wählbarer Hintergrund (oder keiner), getrennt abgespielt.
+- Airtable Personal Tracks: "Audio URL" zeigt jetzt auf die Voice-only-Datei. Für die App evtl. eigenes Feld für die Hintergrund-Version (vorher Freigabe).
 - Workflow 7 (Pull Channel Videos) auf einem kleinen Kanal testen (z.B. Neville Creation), erst dann alle.
 - Transkripte für die Shortlist holen (TranscriptAPI-Credits beachten, Agent Runs loggen). Nummer 8 ist inzwischen an "Voice Track Segments" vergeben.
 - Wettbewerbsanalyse: Top 50 je Kanal, Muster bei Titeln, Hooks, Längen, Themenlücken → Insights.
