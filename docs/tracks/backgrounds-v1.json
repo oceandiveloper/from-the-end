@@ -1,0 +1,10 @@
+[
+  {"name": "el-warm-piano-v1", "kind": "Piano", "useFor": ["Evening"], "seconds": 120,
+   "prompt": "Slow, warm ambient felt piano with soft sustained pads underneath. Sparse, gentle notes, lots of space, warm reverb. Calm, safe, tender, like late evening in a quiet room. No drums, no beat, no build-up, no vocals. Even, steady energy from start to end so it can loop under a spoken voice."},
+  {"name": "el-soft-pad-v1", "kind": "Pad", "useFor": ["Evening", "Midday"], "seconds": 120,
+   "prompt": "Warm, slowly evolving ambient synth pad, deep and soft, like breathing. Very slow chord changes, no melody that pulls attention, gentle low warmth. Peaceful, grounding, sleep-friendly. No drums, no percussion, no vocals, no sudden changes. Even energy throughout so it can loop under a spoken voice."},
+  {"name": "el-morning-light-v1", "kind": "Strings", "useFor": ["Morning"], "seconds": 120,
+   "prompt": "Gentle, hopeful morning ambient: soft clean electric guitar harmonics and light warm strings over a quiet pad. Bright but calm, like first light and a cup of coffee, quietly confident. No drums, no beat, no vocals, no big build-up. Steady energy from start to end so it can loop under a spoken voice."},
+  {"name": "el-ocean-calm-v1", "kind": "Ocean", "useFor": ["Padel", "Midday"], "seconds": 120,
+   "prompt": "Calm instrumental ambience with distant soft ocean waves and a warm, very quiet pad underneath. Slow, steady, settling, like sitting by the sea after a long day. No drums, no melody in the foreground, no vocals. Even energy throughout so it can loop under a spoken voice."}
+]

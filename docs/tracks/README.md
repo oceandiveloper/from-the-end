@@ -56,4 +56,19 @@ Current voice: ElevenLabs "James" (`EkK5I93UQWFDigLMpZcX`). Kevin (2026-11-11): 
 
 - Every track exists as **voice only** (`-voice.mp3`) and **with background**. The bot plays voice only (Kevin, 2026-11-09: the generated ffmpeg ambient doesn't work for him).
 - The app later mixes voice + a background the listener picks (or none) at playback. So the voice-only file is the master; background tracks are separate loops, not baked in.
-- The current background (`scripts/make_ambient.sh`, brown noise + drone) is a placeholder. Better backgrounds: see `docs/open-items.md`.
+- The current background (`scripts/make_ambient.sh`, brown noise + drone) is a placeholder.
+
+## Background tracks (Airtable "Background Tracks" `tblmKXp82bw4Ncxt1`)
+
+One row per loop: Name, Status (Idea / Generated / Approved / Rejected), **Usage Rights**, Generator, License, Model, Prompt, Seed, Kind, Use For, Loop Seconds, Audio URL, Kevin (rating), Feedback. The app later lists only rows with Status "Approved" **and** Usage Rights "Public OK"; Kevin's private player may use everything.
+
+| Source | Cost | Usage Rights | Note |
+|---|---|---|---|
+| ElevenLabs Music (existing subscription) | credits | Public OK once the plan is confirmed (paid plans allow commercial use, except film/TV/games) | AI, prompt-based, best route for the app |
+| Envato Elements (subscription) | included | YouTube only | register per project; app use unclear, ask Envato support before the app ships |
+| Uppbeat (subscription) | included | YouTube only | licence is for video content; apps need a custom licence |
+| MusicGen local (`scripts/gen_background.py`) | free | **Private only** | weights CC-BY-NC 4.0; ~40 s per 30 s loop on the M1 Max |
+
+ElevenLabs Music: WF14 **Generate Background** (`07nWaUGUcYjxVKH0`), webhook `fte-backgrounds-generate` `{name, prompt, seconds 30–180, kind, useFor, model?}` → instrumental track (`music_v2_5`) → Bunny `backgrounds/{name}.mp3` → Airtable row (Usage Rights "Check"). `seed` cannot be combined with `prompt` (API 422). The API key needs the permission **Music Generation**. Batch: `scripts/gen_backgrounds_elevenlabs.sh docs/tracks/backgrounds-v1.json` (one at a time, waits for the CDN). The tracks are not seamless loops: the player crossfades at the end (~4 s).
+
+MusicGen: `.venv-audio/bin/python scripts/gen_background.py <name> "<prompt>" --seed 1 --seconds 30 [--model facebook/musicgen-medium]` → `build/backgrounds/<name>-loop.mp3` (seamless loop, 4 s crossfade at the seam, the player repeats it). One-time setup: `python3 -m venv .venv-audio && .venv-audio/bin/pip install torch transformers scipy accelerate`. Upload: WF9 with `path=backgrounds/<name>.mp3`.

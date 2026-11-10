@@ -3,3 +3,5 @@
 audio/
 .claude/settings.local.json
 build/
+.venv-audio/
+.codex/
