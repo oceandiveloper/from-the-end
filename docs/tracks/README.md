@@ -8,7 +8,7 @@ Scripts for Kevin's own tracks (and later the public formats). Kevin tests every
 |---|---|---|---|
 | Evening "Fall asleep in the end" | ~20–25 min | before sleep | Landing → Revision (changes with the day: Work / Family / Money / Calm) → Scene (one wish, stays for weeks) → Drift (no outro, ambient fades) |
 | Morning "Wake up in the end" | ~15 min | after getting up, during the routine (coffee, teeth, shower) | v2: continuous talk with short calls back to the present; Up → First minutes → Coffee → Body (line 6) → Mirror → From the end (inner conversation tonight) → Trust (line 9) → Work (line 1, one word for the day) → Out the door |
-| Midday Reset | ~7 min | when everything is too much | Stop → Breath → Weather → Anchor → Return (ends awake) |
+| Midday Reset | ~7.5 min | after hours at the screen, head buzzing | v2: Step away → Eyes (far away) → Breath (long out) → Body → Sound → Closing the tabs → Your energy → Back (ends awake) |
 | Padel Before | ~5 min | before a match, nerves | Arrive → Breath → The nerves (energy, not enemy) → From the end (walking off court) → Three lines → Go |
 | Padel After | ~6–8 min | after a rough game, inner critic loud | Kevin (v3, Neville language): Catch → What the replay does → Revision (narrated through sound and feel) → Three lines → Something that went right → Done. Public (Calm v1): just talk, no LoA, from "I failed" to "today is done, next time I try again" |
 
@@ -45,7 +45,7 @@ In the bot (WF0, node "Route Update"): `/morning` and `/reset` play directly (ma
 | Padel Before v1 | `padel-before-v1.md` | `tracks/padel-before-v1/padel-before-v1.mp3` |
 | Padel After v3 (Kevin, Neville language) | `padel-after-v3.md` | `tracks/padel-after-v3/padel-after-v3.mp3` (bot: /padel → After; v2 replaced) |
 | Padel After Calm v1 (public, no LoA) | `padel-after-calm-v1.md` | `tracks/padel-after-calm-v1/padel-after-calm-v1.mp3` (bot: /padel → After, just calm) |
-| Midday Reset v1 | `midday-reset-v1.md` | `tracks/midday-reset-v1/midday-reset-v1.mp3` |
+| Midday Reset v2 "Come down" | `midday-reset-v2.md` | `tracks/midday-reset-v2/midday-reset-v2.mp3` (bot: /reset; v1 replaced) |
 | Wake Up in the End v2 | `morning-wake-v2.md` | `tracks/morning-wake-v2/morning-wake-v2.mp3` (bot: /morning; v1 replaced) |
 
 ## Audio versions and background
