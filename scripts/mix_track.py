@@ -10,7 +10,7 @@ for i, p in enumerate(plan):
     out = f'{b}/parts/{i:03d}.wav'
     if p['type'] == 'voice':
         seg = f"{b}/seg/{p['key']}.mp3"
-        urllib.request.urlretrieve(f"https://from-the-end-audio.b-cdn.net/tracks/{track}/{p['key']}.mp3", seg)
+        urllib.request.urlretrieve(f"https://from-the-end-audio.b-cdn.net/tracks/{track}/{p["key"]}.mp3?fresh={int(__import__("time").time())}", seg)
         vol = 0.7 if p['module'] == 'drift' else 1.0
         # Trim ElevenLabs' leading/trailing silence; if the next item is voice too, leave a short breath gap.
         nxt = plan[i+1] if i + 1 < len(plan) else None
