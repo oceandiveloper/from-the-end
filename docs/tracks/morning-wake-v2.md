@@ -16,6 +16,7 @@ Rule check:
 - No claimed feelings: the voice says "let", "notice", "what if", never "you feel".
 - Always "you".
 - Silence: about 55 s of about 15 min.
+- No pictures: Kevin can barely visualize (2026-11-10). Scenes run through sound, touch, body and his own voice (Neville's inner conversation), never "see / picture / imagine".
 - No silent "imagine it yourself" steps (Kevin, 2026-11-10): the voice describes every scene itself, the listener just follows.
 
 ---
@@ -108,13 +109,13 @@ Let your body borrow a bit of that while you stand there. Feet. Shoulders. Breat
 
 ## 6. From the end
 
-Now let's do something that sounds simple. Imagine it's tonight. The day is already over. You're lying in bed, and you're thinking back over it. And it was a good day. Not because everything worked. Not because nothing went wrong. It was a good day because of how you were in it.
+Now let's do something that sounds simple. Let's jump to tonight. The day is already over. You're lying in bed, the sheets cool, your head heavy on the pillow. And somebody close to you asks, so, how was your day? And you hear yourself answer. Good. It was a really good day. And it's not because everything worked. Not because nothing went wrong. You say it because of how you were in it.
 
-You didn't rush. You answered people without a knot in your stomach. When something annoying came up, you took a breath before you reacted. You said what you meant. You said no once, and it was easy. You took a moment for yourself in the middle of it all, and you didn't feel guilty about it. You noticed when you were tired and you were kind to yourself about it.
+And you keep talking, the way you do at night when you're tired and honest. I didn't rush today. When that annoying message came in, I took a breath before I answered. I said what I meant. I said no once, and it was easy. I took a break in the middle of it all, and I didn't feel bad about it.
 
-That's what you're thinking about tonight. Not what you got done. Who you were while it happened.
+That's what you hear yourself say tonight. Not what you got done. Who you were while it happened. Listen to your own voice saying it. Calm, a bit slow, nothing to prove. Good day.
 
-Now come back to right now, this morning, and bring that with you. You've just seen how today goes from the inside. Not the details. The way you are in it. That's already decided. Everything else is just the day filling in the details.
+Now come back to right now, this morning, and bring that voice with you. You've just heard how today goes, from the inside. Not the details. The way you are in it. That's already decided. Everything else is just the day filling in the details.
 
 That's how it works. You don't get there by fighting through the day. You start from there, and the day follows.
 
