@@ -1,6 +1,11 @@
 # Offene Punkte
 
-## Als Nächstes (Stand 2026-11-09)
+## Als Nächstes (Stand 2026-11-10)
+- Selbstexperiment läuft: Baseline (VVIQ + Board) ab 2026-11-10, dann 12 Methoden à 7 Tage (Airtable Experiments). Kevin morgens `/today`, abends Clip per `/clip`, nach Tag 7 Verdict setzen und `/next`. Reihenfolge in Airtable frei änderbar (Order).
+- Zeitzone prüfen: Workflows 11–13 rechnen in Europe/Berlin. Falls Kevin in einer anderen Zeitzone lebt, umstellen (sonst stimmt die Tageszählung morgens nicht).
+- Clip-Upload mit echtem Video/Sprachnachricht testen (bisher nur Text getestet). Grenze 20 MB pro Datei (Telegram-Bot-API).
+- Nach 2 Wochen: Clips sichten (Feld Usable), entscheiden, ob/wie öffentlich gestartet wird. Liste innerer Zeichen "close to the result" aus Videos zusammenstellen (keine äußeren Zeichen).
+- BotFather-Menü um today, clip, next ergänzen.
 - Kevin testet die Tracks (Morning, Midday, Evening ×4, Padel ×2) ein paar Tage, Feedback zu Sätzen, Tempo, Ambient.
 - Neuer Fluss (mehr Inhalt, Pausen nur bei Atem/Szene/Sätzen): Kevin hört Padel After v2. Passt es, alle anderen Tracks genauso neu schreiben und vertonen (Morning, Midday, Padel Before, Abend-Module). Credits: grob 25.000 Zeichen.
 - Kevin legt das Befehlsmenü in BotFather an (`/setcommands`: morning, reset, evening, padel, tracks, help).
