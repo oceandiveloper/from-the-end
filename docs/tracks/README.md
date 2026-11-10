@@ -48,6 +48,10 @@ In the bot (WF0, node "Route Update"): `/morning` and `/reset` play directly (ma
 | Midday Reset v2 "Come down" | `midday-reset-v2.md` | `tracks/midday-reset-v2/midday-reset-v2.mp3` (bot: /reset; v1 replaced) |
 | Wake Up in the End v2 | `morning-wake-v2.md` | `tracks/morning-wake-v2/morning-wake-v2.mp3` (bot: /morning; v1 replaced) |
 
+## Voice
+
+Current voice: ElevenLabs "James" (`EkK5I93UQWFDigLMpZcX`). Kevin (2026-11-11): James starts to get on his nerves. Test round `voice-samples-v1` (same 437-character passage from Morning v2, speed 0.9) with 10 library voices, all added to the account as "FTE test …": Adam Stone, Christopher, Jon, Milo, Archer, Ash, Lauren, Brittney, Priyanka, Autumn Veil. Samples: `tracks/voice-samples-v1/NN-name.mp3`. WF8 takes `voiceId`; a new voice means re-voicing every track (new file names).
+
 ## Audio versions and background
 
 - Every track exists as **voice only** (`-voice.mp3`) and **with background**. The bot plays voice only (Kevin, 2026-11-09: the generated ffmpeg ambient doesn't work for him).

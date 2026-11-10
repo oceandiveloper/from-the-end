@@ -43,6 +43,7 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 11. **Experiment Today** (`hHH75yRjkWQRfygF`): Webhook `fte-experiment-today` `{chatId}`. Aktives Experiment (Tabelle **Experiments** `tblmpPKd6W4w1v3Qf`) + letzte Clips → Claude schreibt Übung, Clip-Fokus, Stichworte, Einstiegssatz für den Tag → Telegram. Zeitzone der Workflows 11–13: Asia/Makassar (Kevin lebt auf Bali).
 12. **Save Experiment Clip** (`lJGoMnQSQxYOZLKu`): Webhook `fte-experiment-clip` `{chatId, kind video|voice|text, fileId, text}`. Telegram-Download (max. 20 MB) → Bunny `clips/` + ElevenLabs STT → **Experiment Log** `tblFz9rNuW3RfNJ2m` (mit Experiment + Tag) → Bestätigung mit Transkript.
 13. **Experiment Next** (`4yV40Pk3WxZkUJ82`): Webhook `fte-experiment-next`. Aktives Experiment → Done, nächstes Queued (kleinste Order) → Active mit Start heute, dann WF11.
+15. **ElevenLabs Voices** (`jbKQ0K9XNA2XieQy`): Webhook `fte-elevenlabs-voices` mit `{action: search|mine|add}`: Voice Library durchsuchen (`query` wird durchgereicht), eigene Stimmen listen, Bibliotheksstimme zum Account hinzufügen (nötig, bevor WF8 sie nutzen kann). WF8 nimmt optional `voiceId` (Standard James).
 
 Änderungen an 1 und 5 (2026-11-08): WF1 liest `mode`/`chatId`; `mode=keep` holt nur Metadaten (kein Transkript, keine Analyse); Duplikat-Meldung geht an Telegram, wenn `chatId` gesetzt. WF5 schickt die Analyse zusätzlich an Telegram (kompakt, einklappbare Quotes, immer Englisch) und hängt neue Methoden an, statt die Verknüpfung zu überschreiben.
 
