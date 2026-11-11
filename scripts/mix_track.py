@@ -21,7 +21,14 @@ for i, p in enumerate(plan):
         subprocess.run(['ffmpeg','-y','-loglevel','error','-f','lavfi','-i','anullsrc=r=44100:cl=stereo','-t',str(p['seconds']),'-c:a','pcm_s16le',out], check=True)
     total += dur(out); lst.write(f"file 'parts/{i:03d}.wav'\n")
 lst.close()
-subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',f'{b}/list.txt','-af','loudnorm=I=-20:TP=-2:LRA=11','-ar','44100','-c:a','pcm_s16le',f'{b}/voice.wav'], check=True)
+# Acoustics (Kevin, 2026-11-11, test voice-acoustics-v1 variant C): ElevenLabs comes out dry and close to the mic.
+# "warm-room" = fuller low mids, softer highs/sibilants, a barely audible small room. FTE_ACOUSTICS=dry turns it off.
+ACOUSTICS = {
+  'warm-room': 'highpass=f=70,equalizer=f=220:t=q:w=1.0:g=2.5,equalizer=f=3200:t=q:w=1.2:g=-2,equalizer=f=6500:t=q:w=2:g=-3,highshelf=f=10000:g=-3,aecho=0.8:0.85:23|37|53:0.18|0.12|0.08,',
+  'dry': '',
+}
+acoustics = ACOUSTICS[os.environ.get('FTE_ACOUSTICS', 'warm-room')]
+subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',f'{b}/list.txt','-af',f'{acoustics}loudnorm=I=-20:TP=-2:LRA=11','-ar','44100','-c:a','pcm_s16le',f'{b}/voice.wav'], check=True)
 # 1) Voice only (no background): what the bot plays; the app mixes its own background later.
 subprocess.run(['ffmpeg','-y','-loglevel','error','-i',f'{b}/voice.wav','-af','apad=pad_dur=3,pan=mono|c0=0.5*c0+0.5*c1',
   '-c:a','libmp3lame','-b:a','96k','-id3v2_version','3','-metadata',f'title={title}','-metadata','artist=From The End', f'{b}/{name}-voice.mp3'], check=True)

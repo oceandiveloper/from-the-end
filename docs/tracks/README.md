@@ -56,6 +56,8 @@ Round 2 (`voice-samples-v2`, 10 clear American voices, speed 1.0): Kevin: deep m
 
 **Current voice, not fixed (Kevin, 2026-11-11):** "FTE Mentor" (`XOOf9U64tEfzTJ4rENa8`, model `eleven_v3`, stability 0.5, style 0, speed 0.95, scripts with audio tags, paragraphs per module merged) is the voice for now, first on `/reset` → `tracks/midday-reset-v2-mentor/`. Kevin wants to keep testing other voices whenever one starts to grate: the sound of a voice matters for whether he can feel anything. So the voice stays a per-track parameter (WF8 `voiceId`/`modelId`), every track records which voice it used, and the app should later let the listener pick the voice like the background. The Coach was too fast and tinny. Tracks not yet re-voiced still use James.
 
+**Acoustics (Kevin, 2026-11-11):** ElevenLabs comes out dry and close to the mic, which feels like headphone AI. Test `build/voice-acoustics-v1/` (original / warm / warm + small room / warm + more space): Kevin picked **warm + small room**. The mixer applies it by default to every voice (`FTE_ACOUSTICS=warm-room`: fuller low mids, softer highs and sibilants, a barely audible small room; `FTE_ACOUSTICS=dry` turns it off). Free, local ffmpeg. `/reset` now plays `tracks/midday-reset-v2-mentor/midday-reset-v2-mentor-warm-voice.mp3`. New file names for remixes, because Bunny caches the old file.
+
 ## Audio versions and background
 
 - Every track exists as **voice only** (`-voice.mp3`) and **with background**. The bot plays voice only (Kevin, 2026-11-09: the generated ffmpeg ambient doesn't work for him).
