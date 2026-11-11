@@ -54,6 +54,8 @@ Current voice: ElevenLabs "James" (`EkK5I93UQWFDigLMpZcX`). Kevin (2026-11-11): 
 
 Round 2 (`voice-samples-v2`, 10 clear American voices, speed 1.0): Kevin: deep male voices too much bass, the others sound like "the neighbour"; Elise closest, not good enough. Round 3: ElevenLabs Voice Design (WF15 `design`/`save`), three descriptions × 3 previews (`build/voice-design-v1/`). Favourites c3 ("FTE Mentor", `XOOf9U64tEfzTJ4rENa8`) and b3 ("FTE Coach", `fxFGU8s6GbMmPPM9dxRl`), saved to the account. Kevin missed emotional weight everywhere; best result: model `eleven_v3` with audio tags (`[softly]`, `[warmly]`, "…" pauses), stability 0.5, speed 0.95, not rushed. Full-track test: `midday-reset-v2-v3tags.md` voiced with both (trackIds `midday-reset-v2-mentor` / `-coach`). v3 takes no previous/next text, so paragraphs within a module are merged into one segment. WF8 takes `voiceId`, `modelId`, `stability`, `style`.
 
+**Decision (Kevin, 2026-11-11): "FTE Mentor" is the new track voice** (`XOOf9U64tEfzTJ4rENa8`, model `eleven_v3`, stability 0.5, style 0, speed 0.95, scripts with audio tags, paragraphs per module merged). The Coach sounded too fast and tinny. First track live: `/reset` → `tracks/midday-reset-v2-mentor/`. All other tracks still use James until they are re-voiced.
+
 ## Audio versions and background
 
 - Every track exists as **voice only** (`-voice.mp3`) and **with background**. The bot plays voice only (Kevin, 2026-11-09: the generated ffmpeg ambient doesn't work for him).
