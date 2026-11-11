@@ -3,5 +3,19 @@
     "deny": [
       "mcp__claude_ai_Airtable"
     ]
+  },
+  "enabledMcpjsonServers": ["n8n", "airtable"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"$CLAUDE_PROJECT_DIR/scripts/cloud-setup.sh\"",
+            "timeout": 300
+          }
+        ]
+      }
+    ]
   }
 }

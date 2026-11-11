@@ -17,6 +17,7 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 
 ## Architektur
 - **Airtable = Single Source of Truth** (Base "From The End"), alle Tools austauschbar. Team-Plan, 50.000 Records pro Base. Forschung und eigener Content bleiben bewusst in **einer** Base (Links über Tabellen).
+  - **Vorläufig, wird neu bewertet.** Laut Entscheidung vom 2026-11-08 kommt eine eigene Web-App mit eigener Datenbank (RunCloud), siehe `docs/decisions.md`. Für die FTE-Apps braucht es etwas Solideres. Kevin will die Daten in einer eigenen App pflegen statt in Airtable. Neue Architektur (Wissensbasis, Vektorindex, App-Backend) nicht fest an Airtable binden, sondern migrierbar halten.
 - **n8n** (n8n.oceandiveloper.com): alle Workflows. Deterministische Sub-Workflows sind die "Tools", Agenten (Supervisor, Researcher, Writer, Reviewer) orchestrieren sie nur dort, wo Urteilsvermögen nötig ist.
 - **Discord** (Server "From The End"): Benachrichtigungen, Freigaben, ein Channel pro Mitarbeiter. Aktuell Incoming Webhooks, später ein Bot für Zwei-Wege (Freigabe-Buttons, Änderungswünsche per Formular).
 - Audio: ElevenLabs (Stimme "James") → Bunny Storage/CDN (`from-the-end-audio.b-cdn.net`).
@@ -68,3 +69,17 @@ Kein Schönreden: Der Erfolgsfall ist nicht garantiert (Zeit ist das echte Risik
 
 ## Prozess und offene Punkte
 Siehe `docs/process.md`, `docs/decisions.md`, `docs/open-items.md`.
+
+## Feste Regeln (gelten lokal und in der Cloud)
+- **Session-Titel enden immer auf ` #FTE#`** (z. B. „Morgen-Track neu #FTE#“), gleich als erste Aktion setzen, auch für abgespaltene Sessions. Kevin wertet damit die Zeit in der Timing-App aus.
+- **Airtable nur über den MCP-Server `airtable`** (eigener FTE-Account). Der claude.ai-Airtable-Connector gehört zum DOCTARIS-/Kunden-Account und ist hier per `.claude/settings.json` gesperrt. Die Sperre nie aufheben, nie darauf ausweichen.
+- **Zeitzone Asia/Makassar** (Kevin lebt auf Bali, WITA, UTC+8). n8n läuft standardmäßig in einer US-Zeitzone: Bei jeder Datums- oder Zeitlogik die Workflow-Zeitzone explizit setzen.
+- **Track-Stimme ist nie fest.** „FTE Mentor“ (Voice Design, ElevenLabs v3) ist nur die aktuelle Wahl, vorher James. Stimme bleibt Parameter pro Track (WF8 `voiceId`, `modelId`), pro Track notieren, welche Stimme benutzt wurde. Abgelehnt: James (zu viel), tiefe Bibliotheks-Männerstimmen (zu viel Bass), lässige Männerstimmen („klingt wie der Nachbar“), meditative Stimmen, indischer Akzent, Coach-Design (zu schnell, blechern).
+- **Die Stimme erzählt die Szene selbst**, keine „such dir einen Moment aus“ + lange Stille. Kevin kann kaum visualisieren: Szenen über Klang, Berührung, Körper, Dialog, nie „sieh / stell dir vor“. Details in `docs/tracks/README.md`.
+
+## Cloud-Sessions (iPhone / claude.ai/code)
+- Erkennbar an `CLAUDE_CODE_REMOTE=true`. Der SessionStart-Hook (`scripts/cloud-setup.sh`) installiert ffmpeg und erzeugt `build/ambient.wav`. Lokal tut er nichts.
+- `build/`, `audio/` und `.venv-audio/` sind nicht im Repo. Der Mixer (`scripts/mix_track.py`) lädt die Segmente vom Bunny-CDN, das geht auch in der Cloud. MusicGen (`scripts/gen_background.py`) läuft nur lokal am Mac.
+- MCP-Tokens kommen aus Umgebungsvariablen der Cloud-Umgebung: `N8N_MCP_TOKEN`, `AIRTABLE_PAT` (Airtable Personal Access Token des FTE-Accounts). Lokal gelten die Einträge mit Scope „local“ in `~/.claude.json`, die überschreiben `.mcp.json`. Keine Tokens ins Repo.
+- Fertige MP3s nach Bunny laden (WF9) braucht den Upload-Token `x-fte-token`; in der Cloud als `FTE_UPLOAD_TOKEN` hinterlegen, falls nötig.
+- Am Ende jeder Cloud-Session committen und pushen, sonst ist die Arbeit weg. Kevin holt die Änderungen am Mac mit `git pull`.
